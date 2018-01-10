@@ -136,11 +136,12 @@ Pod::Spec.new do |s|
 
   s.name         = "SQNavigationBar"
   s.version      = "0.0.1"
-  s.summary      = "UINavigationBar Category 简单方法修改UINavigationBar的样式"
+  s.summary      = "SQNavigationBar"
+  s.description  = "Easy to set the UINavigationBar style"
   s.homepage     = "https://github.com/semnyqu/SQNavigationBar"
   s.license      = "MIT"
   s.author       = { "semnyqu" => "semny.qu@gmail.com" }
-  s.source       = { :git => "https://github.com/semnyqu/SQNavigationBar.git", :tag => 'v 0.0.1'}
+  s.source       = { :git => "https://github.com/semnyqu/SQNavigationBar.git", :tag => 'v0.0.1'}
   s.source_files = "SQNavigationBar/UINavigationBar+SQStyle.{h,m}"
   s.requires_arc = true
   s.platform     = :ios, '7.0'

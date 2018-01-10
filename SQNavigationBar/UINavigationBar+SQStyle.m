@@ -26,7 +26,7 @@ static char overlayKey;
     objc_setAssociatedObject(self, &overlayKey, overlay, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)lt_setBackgroundColor:(UIColor *)backgroundColor
+- (void)sq_setBackgroundColor:(UIColor *)backgroundColor
 {
     if (!self.overlay) {
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
@@ -38,12 +38,12 @@ static char overlayKey;
     self.overlay.backgroundColor = backgroundColor;
 }
 
-- (void)lt_setTranslationY:(CGFloat)translationY
+- (void)sq_setTranslationY:(CGFloat)translationY
 {
     self.transform = CGAffineTransformMakeTranslation(0, translationY);
 }
 
-- (void)lt_setElementsAlpha:(CGFloat)alpha
+- (void)sq_setElementsAlpha:(CGFloat)alpha
 {
     [[self valueForKey:@"_leftViews"] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger i, BOOL *stop) {
         view.alpha = alpha;
@@ -66,7 +66,7 @@ static char overlayKey;
     }];
 }
 
-- (void)lt_reset
+- (void)sq_reset
 {
     [self setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [self.overlay removeFromSuperview];

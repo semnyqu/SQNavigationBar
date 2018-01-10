@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+    [self.navigationController.navigationBar sq_setBackgroundColor:[UIColor clearColor]];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -31,9 +31,9 @@
     CGFloat offsetY = scrollView.contentOffset.y;
     if (offsetY > NAVBAR_CHANGE_POINT) {
         CGFloat alpha = MIN(1, 1 - ((NAVBAR_CHANGE_POINT + 64 - offsetY) / 64));
-        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
+        [self.navigationController.navigationBar sq_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
     } else {
-        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
+        [self.navigationController.navigationBar sq_setBackgroundColor:[color colorWithAlphaComponent:0]];
     }
 }
 
@@ -49,7 +49,7 @@
 {
     [super viewWillDisappear:animated];
     self.tableView.delegate = nil;
-    [self.navigationController.navigationBar lt_reset];
+    [self.navigationController.navigationBar sq_reset];
 }
 
 #pragma mark UITableViewDatasource

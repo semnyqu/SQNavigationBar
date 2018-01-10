@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UINavigationBar (SQStyle)
-- (void)lt_setBackgroundColor:(UIColor *)backgroundColor;
-- (void)lt_setElementsAlpha:(CGFloat)alpha;
-- (void)lt_setTranslationY:(CGFloat)translationY;
-- (void)lt_reset;
+- (void)sq_setBackgroundColor:(UIColor *)backgroundColor;
+- (void)sq_setElementsAlpha:(CGFloat)alpha;
+- (void)sq_setTranslationY:(CGFloat)translationY;
+- (void)sq_reset;
 @end

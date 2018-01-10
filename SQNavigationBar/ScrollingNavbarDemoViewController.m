@@ -40,8 +40,8 @@
 
 - (void)setNavigationBarTransformProgress:(CGFloat)progress
 {
-    [self.navigationController.navigationBar lt_setTranslationY:(-44 * progress)];
-    [self.navigationController.navigationBar lt_setElementsAlpha:(1-progress)];
+    [self.navigationController.navigationBar sq_setTranslationY:(-44 * progress)];
+    [self.navigationController.navigationBar sq_setElementsAlpha:(1-progress)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -52,7 +52,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.navigationController.navigationBar lt_reset];
+    [self.navigationController.navigationBar sq_reset];
 }
 
 #pragma mark UITableViewDatasource
