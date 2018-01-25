@@ -135,13 +135,13 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
   s.name         = "SQNavigationBar"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "SQNavigationBar"
   s.description  = "Easy to set the UINavigationBar style"
   s.homepage     = "https://github.com/semnyqu/SQNavigationBar"
   s.license      = "MIT"
   s.author       = { "semnyqu" => "semny.qu@gmail.com" }
-  s.source       = { :git => "https://github.com/semnyqu/SQNavigationBar.git", :tag => 'v0.0.1'}
+  s.source       = { :git => "https://github.com/semnyqu/SQNavigationBar.git", :tag => 'v0.0.2'}
   s.source_files = "SQNavigationBar/UINavigationBar+SQStyle.{h,m}"
   s.requires_arc = true
   s.platform     = :ios, '7.0'
